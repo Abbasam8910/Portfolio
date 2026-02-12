@@ -10,6 +10,7 @@ export default function ScrollyCanvas() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [images, setImages] = useState<HTMLImageElement[]>([]);
     const [isLoaded, setIsLoaded] = useState(false);
+    const [loadProgress, setLoadProgress] = useState(0);
 
     useEffect(() => {
         let loadedCount = 0;
@@ -20,6 +21,7 @@ export default function ScrollyCanvas() {
             img.src = `/sequence/${frame}`;
             img.onload = () => {
                 loadedCount++;
+                setLoadProgress(Math.round((loadedCount / frames.length) * 100));
                 if (loadedCount === frames.length) {
                     setIsLoaded(true);
                 }
@@ -27,6 +29,7 @@ export default function ScrollyCanvas() {
             img.onerror = () => {
                 console.error(`Failed to load ${frame}`);
                 loadedCount++;
+                setLoadProgress(Math.round((loadedCount / frames.length) * 100));
                 if (loadedCount === frames.length) {
                     setIsLoaded(true);
                 }
@@ -123,8 +126,41 @@ export default function ScrollyCanvas() {
                 <canvas ref={canvasRef} className="block w-full h-full object-cover" />
                 <Overlay scrollYProgress={scrollYProgress} />
                 {!isLoaded && (
-                    <div className="absolute inset-0 flex items-center justify-center bg-[#0a0a0a] z-50 text-blue-500 font-mono tracking-widest animate-pulse">
-                        Loading Abbas&apos;s Portfolio...
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0a0a0a] z-50 gap-6">
+                        {/* Circular Progress */}
+                        <div className="relative w-28 h-28 sm:w-36 sm:h-36">
+                            <svg className="w-full h-full -rotate-90" viewBox="0 0 120 120">
+                                {/* Background circle */}
+                                <circle
+                                    cx="60" cy="60" r="52"
+                                    fill="none"
+                                    stroke="rgba(255,255,255,0.08)"
+                                    strokeWidth="6"
+                                />
+                                {/* Progress circle */}
+                                <circle
+                                    cx="60" cy="60" r="52"
+                                    fill="none"
+                                    stroke="#22d3ee"
+                                    strokeWidth="6"
+                                    strokeLinecap="round"
+                                    strokeDasharray={`${2 * Math.PI * 52}`}
+                                    strokeDashoffset={`${2 * Math.PI * 52 * (1 - loadProgress / 100)}`}
+                                    className="transition-all duration-300 ease-out"
+                                    style={{ filter: 'drop-shadow(0 0 6px rgba(34, 211, 238, 0.5))' }}
+                                />
+                            </svg>
+                            {/* Percentage text */}
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <span className="text-2xl sm:text-3xl font-bold text-white font-mono">
+                                    {loadProgress}<span className="text-cyan-400 text-lg">%</span>
+                                </span>
+                            </div>
+                        </div>
+                        {/* Loading label */}
+                        <p className="text-sm sm:text-base text-gray-400 font-mono tracking-wider">
+                            Loading Abbas&apos;s Portfolio...
+                        </p>
                     </div>
                 )}
             </div>
