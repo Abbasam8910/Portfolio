@@ -122,7 +122,7 @@ function StepCard({ step, index, isExpanded, onClick }: {
                                 Example: {step.example.project}
                             </p>
                             <p className="text-gray-300 text-sm leading-relaxed italic">
-                                "{step.example.story}"
+                                &ldquo;{step.example.story}&rdquo;
                             </p>
                         </div>
                     </motion.div>

@@ -65,19 +65,19 @@ export default function AboutSection() {
                         {/* Personal Story */}
                         <div className="prose prose-invert max-w-none">
                             <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                                I'm an AI/ML Engineer who believes the best models are the ones that <span className="text-blue-400 font-semibold">actually ship and create measurable impact</span>.
+                                I&apos;m an AI/ML Engineer who believes the best models are the ones that <span className="text-blue-400 font-semibold">actually ship and create measurable impact</span>.
                             </p>
 
                             <p className="text-gray-300 leading-relaxed">
-                                My journey into AI started during my undergrad when I built a gesture recognition system for sign language translation. Watching it help someone communicate for the first time showed me the transformative power of accessible AI—and I've been hooked ever since.
+                                My journey into AI started during my undergrad when I built a gesture recognition system for sign language translation. Watching it help someone communicate for the first time showed me the transformative power of accessible AI—and I&apos;ve been hooked ever since.
                             </p>
 
                             <p className="text-gray-300 leading-relaxed">
-                                Today, I specialize in taking ML research from paper to production. Whether it's deploying computer vision models on edge devices or fine-tuning SLMs for mobile, I focus on building systems that are <span className="text-green-400 font-semibold">reliable, scalable, and solve real business problems</span>.
+                                Today, I specialize in taking ML research from paper to production. Whether it&apos;s deploying computer vision models on edge devices or fine-tuning SLMs for mobile, I focus on building systems that are <span className="text-green-400 font-semibold">reliable, scalable, and solve real business problems</span>.
                             </p>
 
                             <p className="text-gray-300 leading-relaxed">
-                                Currently, I'm an AI/ML Engineer at Intellijohn Labs, architecting CV solutions for workplace safety. I'm also completing my M.Tech in Data Science & AI at CUSAT, focusing on edge-optimized models for low-resource environments.
+                                Currently, I&apos;m an AI/ML Engineer at Intellijohn Labs, architecting CV solutions for workplace safety. I&apos;m also completing my M.Tech in Data Science &amp; AI at CUSAT, focusing on edge-optimized models for low-resource environments.
                             </p>
                         </div>
 

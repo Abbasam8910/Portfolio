@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, MapPin, Globe, Plane } from 'lucide-react';
+import { Mail, Linkedin, MapPin, Globe, Plane } from 'lucide-react';
 import TerminalHeader from './TerminalHeader';
 
 export default function ContactSection() {
@@ -15,9 +15,9 @@ export default function ContactSection() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <TerminalHeader command="ping">Let's Build Something Together</TerminalHeader>
+                    <TerminalHeader command="ping">Let&apos;s Build Something Together</TerminalHeader>
                     <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-8 sm:mb-12 mt-4">
-                        I'm currently open to full-time opportunities in:
+                        I&apos;m currently open to full-time opportunities in:
                     </p>
 
                     {/* Role Tags */}
