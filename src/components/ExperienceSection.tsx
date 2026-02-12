@@ -158,10 +158,10 @@ export default function ExperienceSection() {
                     transition={{ duration: 0.6 }}
                     className="mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                         Work Experience
                     </h2>
-                    <p className="text-xl text-gray-400 max-w-2xl">
+                    <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl">
                         Building production AI systems across Computer Vision, NLP, and Automation
                     </p>
                 </motion.div>
@@ -182,19 +182,19 @@ export default function ExperienceSection() {
                     className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4"
                 >
                     <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-cyan-400 mb-1">2+</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-cyan-400 mb-1">2+</div>
                         <div className="text-sm text-gray-400">Years in ML</div>
                     </div>
                     <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-green-400 mb-1">6+</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-1">6+</div>
                         <div className="text-sm text-gray-400">Models Deployed</div>
                     </div>
                     <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-purple-400 mb-1">3</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-purple-400 mb-1">3</div>
                         <div className="text-sm text-gray-400">Companies</div>
                     </div>
                     <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                        <div className="text-3xl font-bold text-amber-400 mb-1">100%</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-amber-400 mb-1">100%</div>
                         <div className="text-sm text-gray-400">Production Focus</div>
                     </div>
                 </motion.div>

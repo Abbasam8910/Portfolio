@@ -16,19 +16,19 @@ export default function ContactSection() {
                     transition={{ duration: 0.6 }}
                 >
                     <TerminalHeader command="ping">Let's Build Something Together</TerminalHeader>
-                    <p className="text-xl text-gray-400 mb-12 mt-4">
+                    <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-8 sm:mb-12 mt-4">
                         I'm currently open to full-time opportunities in:
                     </p>
 
                     {/* Role Tags */}
-                    <div className="flex flex-wrap justify-center gap-3 mb-16">
-                        <span className="px-6 py-3 bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 rounded-full font-medium">
+                    <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 sm:mb-16">
+                        <span className="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 rounded-full font-medium">
                             Computer Vision Engineering
                         </span>
-                        <span className="px-6 py-3 bg-purple-500/10 text-purple-300 border border-purple-500/30 rounded-full font-medium">
+                        <span className="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base bg-purple-500/10 text-purple-300 border border-purple-500/30 rounded-full font-medium">
                             ML Engineering (NLP, GenAI)
                         </span>
-                        <span className="px-6 py-3 bg-green-500/10 text-green-300 border border-green-500/30 rounded-full font-medium">
+                        <span className="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base bg-green-500/10 text-green-300 border border-green-500/30 rounded-full font-medium">
                             MLOps / ML Infrastructure
                         </span>
                     </div>
@@ -45,7 +45,7 @@ export default function ContactSection() {
                     {/* Email Card */}
                     <a
                         href="mailto:abbasam8910@gmail.com"
-                        className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-cyan-500/50 hover:shadow-glow transition-all duration-300"
+                        className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sm:p-8 hover:bg-white/10 hover:border-cyan-500/50 hover:shadow-glow transition-all duration-300"
                     >
                         <div className="flex items-center justify-center w-16 h-16 bg-cyan-500/20 rounded-full mb-4 mx-auto group-hover:scale-110 transition-transform">
                             <Mail className="w-8 h-8 text-cyan-400" />
@@ -60,7 +60,7 @@ export default function ContactSection() {
                         href="https://linkedin.com/in/abbasam8910"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-cyan-500/50 hover:shadow-glow transition-all duration-300"
+                        className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sm:p-8 hover:bg-white/10 hover:border-cyan-500/50 hover:shadow-glow transition-all duration-300"
                     >
                         <div className="flex items-center justify-center w-16 h-16 bg-cyan-500/20 rounded-full mb-4 mx-auto group-hover:scale-110 transition-transform">
                             <Linkedin className="w-8 h-8 text-cyan-400" />

@@ -15,7 +15,7 @@ export default function AboutSection() {
                     transition={{ duration: 0.6 }}
                     className="mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                         About Me
                     </h2>
                 </motion.div>
@@ -32,7 +32,7 @@ export default function AboutSection() {
                     >
                         {/* Profile Photo Placeholder */}
                         <div className="relative mb-6">
-                            <div className="w-full aspect-square max-w-sm mx-auto bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl border border-white/10 flex items-center justify-center">
+                            <div className="w-full aspect-square max-w-[220px] sm:max-w-sm mx-auto bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl border border-white/10 flex items-center justify-center">
                                 <span className="text-6xl">👨‍💻</span>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ export default function AboutSection() {
                     >
                         {/* Personal Story */}
                         <div className="prose prose-invert max-w-none">
-                            <p className="text-lg text-gray-300 leading-relaxed">
+                            <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
                                 I'm an AI/ML Engineer who believes the best models are the ones that <span className="text-blue-400 font-semibold">actually ship and create measurable impact</span>.
                             </p>
 

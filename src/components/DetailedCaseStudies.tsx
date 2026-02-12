@@ -268,10 +268,10 @@ function CaseStudyCard({ study, index }: { study: CaseStudy; index: number }) {
             className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-all duration-300 hover:shadow-glow hover:-translate-y-1"
         >
             {/* Header */}
-            <div className="p-8 md:p-10">
-                <div className="flex items-start justify-between mb-4">
+            <div className="p-5 sm:p-8 md:p-10">
+                <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                     <div>
-                        <div className="flex items-center gap-3 mb-3">
+                        <div className="flex flex-wrap items-center gap-3 mb-3">
                             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white group-hover:text-cyan-400 transition-colors">
                                 {study.title}
                             </h3>
@@ -354,7 +354,7 @@ function CaseStudyCard({ study, index }: { study: CaseStudy; index: number }) {
                     {/* Business Metrics */}
                     <div className="mb-4">
                         <p className="text-sm text-gray-400 mb-3 font-semibold">Business Results:</p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             {study.impact.business.map((item) => (
                                 <div key={item.metric} className="bg-green-500/5 border border-green-500/20 rounded-lg p-3">
                                     <div className="text-green-400 font-bold text-lg">{item.value}</div>
@@ -430,7 +430,7 @@ export default function DetailedCaseStudies() {
                     className="mb-16"
                 >
                     <TerminalHeader command="cd">Case Studies</TerminalHeader>
-                    <p className="text-xl text-gray-400 max-w-2xl mt-4">
+                    <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mt-4">
                         Production ML systems with measurable business impact
                     </p>
                 </motion.div>

@@ -154,7 +154,7 @@ export default function SkillsMatrix() {
                     className="text-center mb-12"
                 >
                     <TerminalHeader command="tree">Technical Toolkit</TerminalHeader>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-8 mt-4">
+                    <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 mt-4">
                         Technologies I use to build production AI systems
                     </p>
 
@@ -164,7 +164,7 @@ export default function SkillsMatrix() {
                             <button
                                 key={category.id}
                                 onClick={() => setActiveCategory(category.id)}
-                                className={`px-5 py-2 rounded-full font-medium transition-all duration-300 ${activeCategory === category.id
+                                className={`px-4 py-2 sm:px-5 text-sm sm:text-base rounded-full font-medium transition-all duration-300 ${activeCategory === category.id
                                     ? 'bg-cyan-500 text-black shadow-lg shadow-cyan-500/50'
                                     : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white border border-white/10'
                                     }`}
@@ -176,7 +176,7 @@ export default function SkillsMatrix() {
                 </motion.div>
 
                 {/* Skills Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                     {filteredSkills.map((skill, index) => (
                         <SkillCard key={skill.name} skill={skill} index={index} />
                     ))}

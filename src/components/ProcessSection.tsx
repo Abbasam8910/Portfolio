@@ -155,10 +155,10 @@ export default function ProcessSection() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                         My Approach
                     </h2>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+                    <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
                         How I take ML projects from problem definition to production deployment
                     </p>
                 </motion.div>

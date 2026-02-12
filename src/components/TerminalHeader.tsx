@@ -15,14 +15,14 @@ export default function TerminalHeader({ children, command = 'ls' }: TerminalHea
     return (
         <div className="font-mono text-sm mb-8">
             {/* Terminal prompt */}
-            <div className="flex items-center gap-2 text-gray-500 mb-2">
+            <div className="flex items-center gap-2 text-gray-500 mb-2 overflow-x-auto">
                 <span className="text-cyan-400">→</span>
                 <span className="text-gray-400">{command}</span>
                 <span className="text-cyan-500">/portfolio/{String(children).toLowerCase().replace(/\s+/g, '-')}</span>
             </div>
 
             {/* Actual heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
                 {children}
             </h2>
 

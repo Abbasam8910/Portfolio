@@ -130,7 +130,7 @@ export default function MetricsShowcase() {
                 </motion.div>
 
                 {/* Metrics Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                     {metrics.map((metric, index) => (
                         <motion.div
                             key={metric.label}
@@ -140,7 +140,7 @@ export default function MetricsShowcase() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="group relative"
                         >
-                            <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover:shadow-glow">
+                            <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 sm:p-6 md:p-8 hover:bg-white/10 transition-all duration-300 hover:shadow-glow">
                                 {/* Icon */}
                                 <div className="text-4xl mb-4">{metric.icon}</div>
 
