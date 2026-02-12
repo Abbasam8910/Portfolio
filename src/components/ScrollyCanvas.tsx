@@ -124,7 +124,7 @@ export default function ScrollyCanvas() {
                 <Overlay scrollYProgress={scrollYProgress} />
                 {!isLoaded && (
                     <div className="absolute inset-0 flex items-center justify-center bg-[#0a0a0a] z-50 text-blue-500 font-mono tracking-widest animate-pulse">
-                        INITIALIZING NEURAL NETWORK...
+                        Loading Abbas&apos;s Portfolio...
                     </div>
                 )}
             </div>
